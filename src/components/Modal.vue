@@ -15,14 +15,14 @@
 
 <script>
 export default {
-  props: ["modalActive"],
+  props: ['modalActive'],
   setup(props, { emit }) {
     const close = () => {
-      emit("close");
-    };
-    return { close };
-  },
-};
+      emit('close')
+    }
+    return { close }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -61,8 +61,9 @@ export default {
     position: relative;
     max-width: 640px;
     width: 80%;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    background-color: #2EB2AF;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: #2eb2af;
     padding: 64px 16px;
     i {
       position: absolute;
